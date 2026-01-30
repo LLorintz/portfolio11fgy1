@@ -235,7 +235,52 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container{
+  row-gap: 4rem;
+  padding-block: 2.5rem 2rem;
+}
 
+.home__content{
+  position: relative;
+  justify-self: center;
+}
+
+.home__image{
+  width: 240px;
+  height: 240px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 5px solid var(--first-color);
+  box-shadow: 0 8px 32px hsl(var(--hue), 80%, 40%, .3);
+}
+
+.home__img{
+  width: 200px;
+}
+
+.home__social{
+  position: absolute;
+  top:0;
+  left: -3rem;
+  display: grid;
+  align-content: center;
+  row-gap:1.5rem;
+}
+
+.home__link{
+  color: var(--white-color);
+  font-size: 2.5rem;
+  transition: transform .4s, color .4s;
+}
+
+.home__link:hover{
+  transform: translateY(-0.5rem);
+  color: var(--first-color);
+}
 
 /*=============== BUTTON ===============*/
 
