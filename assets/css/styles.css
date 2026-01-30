@@ -360,7 +360,17 @@ img {
 .home__container{
   grid-template-columns: 400px;
   justify-content: center;
-}  
+} 
+
+.home__image{
+  width: 200px;
+  height: 200px;
+}
+
+.home__img{
+  width: 170px;
+}
+
 }
 
 /* For medium devices */
@@ -368,7 +378,11 @@ img {
 .home__container{
   grid-template-columns: repeat(2, 350px);
   justify-content: center;
-}  
+}
+
+.home__data{
+  text-align:initial;
+}
 }
 
 /* For large devices */
@@ -392,6 +406,15 @@ img {
   grid-template-columns: 400px 480px;
   justify-content: center;
 }  
+
+.home__image{
+  width: 400px;
+  height: 400px;
+}
+
+.home__img{
+  width: 340px;
+}
 
 }
 
