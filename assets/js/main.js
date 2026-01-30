@@ -25,10 +25,23 @@ const Linkaction = ()=>{
 navLink.forEach(n=> n.addEventListener('click', Linkaction))
 
 /*=============== HOME TYPED JS ===============*/
-
+ var typed = new Typed('#home-subtitle', {
+      strings: ['Developer', 'Webdesigner', 'Fronted Manager', 'Freelancer'],
+      typeSpeed: 50,
+      loop:true,
+      backSpeed:40,
+      backDelay:2000,
+      cursorChar:'_'
+    });
 
 /*=============== ADD SHADOW HEADER ===============*/
+const shadowHeader= ()=>{
+    const header = document.getElementById('header')
+    this.scrollY>50 ? header.classList.add('shadow-header'):
+    header.classList.remove('shadow-header')
+}
 
+window.addEventListener('scroll', shadowHeader)
 
 /*=============== CONTACT EMAIL JS ===============*/ 
 

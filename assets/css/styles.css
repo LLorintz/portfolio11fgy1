@@ -229,7 +229,9 @@ img {
 }
 
 /* Add shadow header */
-
+.shadow-header{
+  box-shadow: 0 5px 32px hsla(0, 0%, 0%, .5);
+}
 
 /* Active link */
 
@@ -304,7 +306,29 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color:var(--black-color);
+  font-weight: var(--font-medium);
+  padding: 1rem 1.5rem;
+  border-radius: .5rem;
+  transition: box-shadow .4s  color .4s;
+}
 
+.button:hover{
+  box-shadow: 0 8px 24px hsla(var(--hue), 80%, 50%, .3);
+}
+
+.button__ghost{
+  background-color: var(--body-color);
+  color: var(--white-color);
+  border: 2px solid var(--first-color);
+}
+.button__ghost:hover{
+  background-color: var(--first-color);
+}
 
 /*=============== ABOUT ===============*/
 
@@ -332,10 +356,20 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (min-width:540px) {
+.home__container{
+  grid-template-columns: 400px;
+  justify-content: center;
+}  
+}
 
 /* For medium devices */
-
+@media screen and (min-width:768px) {
+.home__container{
+  grid-template-columns: repeat(2, 350px);
+  justify-content: center;
+}  
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px ) {
@@ -353,6 +387,11 @@ img {
     flex-direction: row;
     column-gap: 4rem;
   }
+
+  .home__container{
+  grid-template-columns: 400px 480px;
+  justify-content: center;
+}  
 
 }
 
